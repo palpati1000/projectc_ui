@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Project C</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-gray-100 to-gray-300 text-gray-900 flex flex-col min-h-screen">
+  <header class="sticky top-0 bg-white shadow-md">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html" class="flex items-center space-x-2">
+        <h1 class="text-2xl font-extrabold text-blue-600">Project C</h1>
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="flex h-screen">
+      <!-- Left half for image -->
+      <div class="w-1/2 bg-cover bg-center" style="background-image: url('src/assets/login-background.jpeg');"></div>
+      <!-- Right half for login form -->
+      <div class="w-1/2 flex items-center justify-center bg-white">
+        <form class="w-3/4 max-w-md bg-white p-8 rounded-lg shadow-lg">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Welcome Back</h2>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+            <input type="password" id="password" name="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your password">
+          </div>
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <input type="checkbox" id="remember" name="remember" class="mr-2">
+              <label for="remember" class="text-gray-700">Remember Me</label>
+            </div>
+            <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+          </div>
+          <button type="submit" class="w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:opacity-90">
+            Login
+          </button>
+          <div class="flex items-center my-6">
+            <hr class="flex-grow border-gray-300">
+            <span class="px-4 text-gray-500">OR</span>
+            <hr class="flex-grow border-gray-300">
+          </div>
+          <div class="flex flex-col space-y-4">
+            <button type="button" class="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700">
+              Login with Facebook
+            </button>
+            <button type="button" class="w-full px-4 py-2 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600">
+              Login with Google
+            </button>
+          </div>
+          <p class="mt-6 text-center text-gray-700">
+            Don't have an account? <a href="#" class="text-blue-500 hover:underline">Register</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center"></div>
+      <p>© <strong>Project C</strong> All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
